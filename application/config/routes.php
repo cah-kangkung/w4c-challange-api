@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -52,3 +52,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['achievements']['GET'] = 'api/rwp/achievements';
+$route['benefits']['GET'] = 'api/rwp/benefits';
+$route['clients']['GET'] = 'api/rwp/clients';
+$route['facilities']['GET'] = 'api/rwp/facilities';
+$route['flows']['GET'] = 'api/rwp/flows';
+$route['portfolios']['GET'] = 'api/rwp/portfolios';
+$route['recommendations']['GET'] = 'api/rwp/recommendations';
